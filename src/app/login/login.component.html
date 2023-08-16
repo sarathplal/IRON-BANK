@@ -1,0 +1,55 @@
+<div class="loginContainer">
+
+    <h1 class="text-primary"><i class="fa-solid fa-building-columns me-3"></i>IRON BANK</h1>
+    <div class="loginText">
+
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, similique tenetur temporibus odio dolorum
+            qui doloribus in impedit quae voluptatem autem omnis optio aspernatur, assumenda maiores quasi esse atque
+            ipsam.
+          
+            Id, nihil. Nisi ut, nemo sunt, nostrum ullam eaque expedita, qui officia magnam quis non voluptas!
+            Voluptatibus dicta reiciendis libero, iusto provident a deserunt blanditiis, doloremque, doloribus
+            praesentium aliquam veniam?</p> -->
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-12 mt-5 formContainer">
+            <h5>welcome back user</h5>
+            <form [formGroup]="loginForm" (ngSubmit)="login()" class="mt-3 w-75 " action="">
+                <input name="accountNumber" formControlName="accNumber" class="form-control mb-3"
+                    placeholder="enter Account Number" type="text">
+                <!--ACCNO: validation -->
+                <div *ngIf="this.loginForm.get('accNumber')?.errors&&this.loginForm.get('accNumber')?.touched"
+                    class="text-danger">
+                    Pleaser enter a valid Acccount Number
+                </div>
+
+                <!-- userName -->
+                <!-- <input formControlName="userName" class="form-control mb-3" placeholder="enter username" type="text"> -->
+                <!--UserName: validation -->
+                <!-- <div *ngIf="this.loginForm.get('userName')?.errors&&this.loginForm.get('userName')?.touched"
+                    class="text-danger">
+                    Pleaser enter a valid UserName
+                </div> -->
+
+                <input formControlName="passWord" class="form-control mb-3" placeholder="enter password" type="text">
+
+                <!--PassWord: validation -->
+                <div *ngIf="this.loginForm.get('passWord')?.errors&&this.loginForm.get('passWord')?.touched"
+                    class="text-danger">
+                    Pleaser enter a valid password🔑
+                </div>
+
+                <button class="btn btn-success mt-3">Login
+                    <div class="spinner-border text-light" *ngIf="isLoading" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                </button>
+            </form>
+
+        </div>
+        <div class="col-lg-6 col-md-12 loginBankDetail">
+
+        </div>
+    </div>
+
+</div>

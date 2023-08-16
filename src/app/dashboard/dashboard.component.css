@@ -1,0 +1,36 @@
+.navbar-brand {
+    color: blue;
+    font-weight: 900;
+    font-size: 2rem;
+}
+/* .leftSide {
+    padding: 20px;
+    background-color: rgb(125, 156, 213,0.2);
+} */
+
+.card img {
+    width: 200px;
+    height: 200px;
+}
+
+.card-body {
+    /* position: absolute; */
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+
+}
+
+.card:hover .card-body{
+   
+    visibility: visible;
+    font-size: 1.5rem;
+    color: black;
+}
+.footer{
+    height: 200px;
+    background-color: rgb(169, 169, 169,0.75);
+    color: rgba(34, 34, 195, 0.699);
+
+}

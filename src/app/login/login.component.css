@@ -1,0 +1,20 @@
+.loginContainer{
+    height: 100vh;
+    padding:50px 0 0 50px;
+    background-image: url('https://wallpapercave.com/dwp2x/wp4316542.jpg');
+    background-size: cover;
+}
+.loginText{
+    color:#000000;
+}
+.formContainer{
+    border-radius: 25px;
+    box-shadow: 5px 3px 10px;
+    background-color: rgb(0, 0, 0,0.4);
+   
+    padding: 15px;
+}
+.formContainer h5{
+    color: #ffffff;
+    font-weight: 900;
+}

@@ -1,0 +1,30 @@
+.register {
+    background-color: teal;
+    margin: 0;
+}
+
+.mainContainer {
+    background-image: url('https://images.pexels.com/photos/8844580/pexels-photo-8844580.jpeg?cs=srgb&dl=pexels-volkan-sorkun-8844580.jpg&fm=jpg');
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.leftPart {
+    position: relative;
+}
+
+.formContainer {
+    background-color: rgba(105, 105, 105, 0.5);
+    border-radius: 25px;
+    box-shadow: 2px 3px 9px;
+    padding: 25px;
+    height: 50vh;
+}
+
+.loginQuestion {
+    position: absolute;
+    color: #ffffff;
+    right: 15%;
+    bottom: 25%;
+}

@@ -1,0 +1,66 @@
+.contents {
+
+    background-image: url('https://cutewallpaper.org/21/hd-wallpaper-safety/Safe-Deposit-Box-4K-HD-Desktop-Wallpaper-for-4K-Ultra-HD-.jpg');
+    padding-top: 50px;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.navContents a {
+    color: #aaa;
+}
+
+.leftContent {
+    width: 45%;
+    height: 300px;
+    padding: 2px;
+    margin: 2.5%;
+    color: #000000;
+}
+
+.text-header {
+    display: flex;
+    align-items: center;
+
+}
+
+.text-header span {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.text-content {
+    height: 100%;
+    padding: 25px;
+    background-color: rgba(18, 18, 20, 0.5);
+    color: azure;
+    border-radius: 10px;
+
+}
+
+.leftContent h1 {
+    color: #1D267D;
+}
+
+.rightContent {
+    width: 45%;
+    height: 300px;
+    margin: 2.5%;
+    /* background-color: rgba(18, 18, 20, 0.5); */
+}
+
+.innerRightContent {
+    width: 80%;
+    margin: 5%;
+    background-image: url('https://media.istockphoto.com/id/470980083/photo/vault-door-black-and-white.jpg?s=612x612&w=0&k=20&c=D_RlHPGJGro752FUYkBe-_S-rUHCXOkM-sb5Rmo9PO0=');
+}

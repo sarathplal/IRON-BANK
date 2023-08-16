@@ -1,0 +1,55 @@
+<div class="row p-5 mainContainer">
+    <div class="col-lg-6 leftPart">
+        <div class="loginQuestion">
+            <h3 class="">Already a user<span class="text-danger ms-2"><i class="fa-solid  fa-question"></i></span></h3>
+            <a routerLink="/login"><button class="btn btn-success ms-2 mt-3" type="button">Login</button></a>
+
+
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-12  mt-4">
+        <h2 class="text-primary">Welcome To IRON BANK</h2>
+        <h5 class=" p-2" style="color: white; font-weight: 900;">The Most Trusted Bank In <span class="text-primary"> WESTEROUS</span></h5>
+        
+        <!-- group should be bind with html form -->
+
+        <form [formGroup]="registerForm" (ngSubmit)="register()" class="formContainer w-75 mt-3" action="">
+
+            <!-- Acc Number -->
+            <input name="accountNumber" formControlName="accNumber" class="form-control mb-3"
+                placeholder="Enter Account Number" type="text">
+            <!--ACCNO: validation -->
+            <div *ngIf="this.registerForm.get('accNumber')?.errors&&this.registerForm.get('accNumber')?.touched"
+                class="text-danger">
+                Pleaser enter a valid Acccount Number
+            </div>
+
+            <!-- UserNAme -->
+            <input name="userName" formControlName="userName" class="form-control mb-3" placeholder="Enter User Name"
+                type="text">
+            <!--USERNAME validation -->
+            <div *ngIf="this.registerForm.get('userName')?.errors&&this.registerForm.get('userName')?.touched"
+                class="text-danger">
+                Pleaser enter a valid user name
+            </div>
+
+            <!-- password -->
+            <input name="passWord" formControlName="passWord" class="form-control mb-3" placeholder="Enter PassWord"
+                type="text">
+            <!--PASSWORD validation -->
+            <div *ngIf="this.registerForm.get('passWord')?.errors&&this.registerForm.get('passWord')?.touched"
+                class="text-danger">
+                Pleaser enter a valid user name
+            </div>
+
+            <!-- <input class="form-control" placeholder="Confirm PassWord" type="text"> -->
+            <!-- <div *ngIf="" class=""></div> -->
+            <button class="btn btn-primary  mt-2" type="submit">REGISTER</button>
+
+        </form>
+
+    </div>
+
+
+
+</div>

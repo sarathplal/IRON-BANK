@@ -1,0 +1,64 @@
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid navContents">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-building-columns me-2"></i>Iron Bank</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="login" aria-current="page" >signin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register" aria-current="page">Register</a>
+          </li>
+  
+        </ul>
+  
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+  
+      </div>
+    </div>
+</nav>
+  
+  <router-outlet></router-outlet>
+  <div class="contents">
+  
+  
+    <div class="leftContent">
+  
+      <div class="text-header ">
+        <span>Welcome to </span>
+        <h1>IRON BANK</h1>
+      </div>
+      <!-- <h3 class="text-center m-0"><i class="fa-solid fa-piggy-bank"></i>Bank Closed</h3> -->
+      <div class="text-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit molestias perferendis odit possimus
+          consequuntur culpa quia a. Rem a, voluptas sapiente ipsum eius, corrupti alias totam aperiam cumque nam
+          corporis.
+        </p>
+        <div class="collapse" id="collapseExample">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis soluta voluptate error ducimus culpa itaque.
+          Nobis labore minima blanditiis hic eius tempore, aliquid neque modi provident quidem corporis debitis
+          aspernatur.
+        </div>
+        <button (click)="collapse()" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+          Read <span *ngIf="isLoaded">More</span>
+          <span *ngIf="!isLoaded">less</span>
+        </button>
+      </div>
+  
+    </div>
+  
+    <div class="rightContent">
+  
+  
+  
+    </div>
+  
+  
+  </div>

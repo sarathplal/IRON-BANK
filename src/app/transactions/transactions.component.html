@@ -1,0 +1,54 @@
+<!-- Transaction page -->
+
+<!-- nav section -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="#"><i class="fa-solid fa-building-columns me-2"></i> IRON BANK</a>
+    </div>
+</nav>
+
+
+
+<div class="container border mt-5">
+    <div class="row mt-2 p-1">
+        <div class="col-lg-2">
+            <h6 class="text-success">All Transactions</h6>
+        </div>
+        <div class="col-lg-8">
+            <div class="d-flex ">
+                <label for="">Transaction</label>
+                <input name="searchKey" [(ngModel)]="searchKey" class="form-control ms-1" type="text">
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <button (click)="generatePdf()" class="btn btn-success">Export</button>
+        </div>
+    </div>
+
+    <!-- Transaction Table section -->
+    <table class="table border text-center table-secondary mt-5 border">
+        <thead>
+            <tr class="text-primary">
+                <th>No</th>
+                <th>Transaction Type</th>
+                <th>From Account</th>
+                <th>To Account</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let transaction of transactionArray | filter :searchKey:'transaction_Type'  ; let i=index">
+                <td>{{i+1}}</td>
+                <td>{{transaction.transaction_Type}}</td>
+                <td>{{transaction.fromAcno}}</td>
+                <td>{{transaction.toAcno}}</td>
+                <td>{{transaction.amount}}</td>
+
+            </tr>
+        </tbody>
+
+    </table>
+
+
+</div>
